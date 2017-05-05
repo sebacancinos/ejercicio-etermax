@@ -1,0 +1,12 @@
+PODS:
+  - Jayme (4.0.2)
+
+DEPENDENCIES:
+  - Jayme (~> 4.0)
+
+SPEC CHECKSUMS:
+  Jayme: 47ccdcdbd6ac057768bd44bcfc98ef48f9c97790
+
+PODFILE CHECKSUM: c164c3abaa8d344a270b62e516cd1f7e01e8e94e
+
+COCOAPODS: 1.1.1

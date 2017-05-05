@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D1FC4AC1EBB785200F559CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FC4AB1EBB785200F559CA /* AppDelegate.swift */; };
+		7D1FC4AE1EBB785200F559CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FC4AD1EBB785200F559CA /* ViewController.swift */; };
+		7D1FC4B11EBB785200F559CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1FC4AF1EBB785200F559CA /* Main.storyboard */; };
+		7D1FC4B31EBB785200F559CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1FC4B21EBB785200F559CA /* Assets.xcassets */; };
+		7D1FC4B61EBB785200F559CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1FC4B41EBB785200F559CA /* LaunchScreen.storyboard */; };
+		7D1FC4C11EBB785200F559CA /* EtermaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FC4C01EBB785200F559CA /* EtermaxTests.swift */; };
+		7D3BA24E1EBB7BDF0099F4D5 /* RedditBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA24D1EBB7BDF0099F4D5 /* RedditBackend.swift */; };
+		7D3BA2511EBB7CF50099F4D5 /* FakeBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2501EBB7CF50099F4D5 /* FakeBackend.swift */; };
+		7D3BA2531EBB83500099F4D5 /* RedditItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2521EBB83500099F4D5 /* RedditItem.swift */; };
+		7D3BA2551EBB8A330099F4D5 /* EntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2541EBB8A330099F4D5 /* EntityFactory.swift */; };
+		7D3BA2581EBB8A950099F4D5 /* FactoryInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2571EBB8A950099F4D5 /* FactoryInitializable.swift */; };
+		7D3BA25A1EBBA2960099F4D5 /* RedditListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2591EBBA2960099F4D5 /* RedditListing.swift */; };
+		7D3BA25C1EBBEAC50099F4D5 /* RedditLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA25B1EBBEAC50099F4D5 /* RedditLink.swift */; };
+		7D3BA25E1EBC16410099F4D5 /* RedditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA25D1EBC16410099F4D5 /* RedditRepository.swift */; };
+		7D3BA2601EBC2C930099F4D5 /* RedditCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA25F1EBC2C930099F4D5 /* RedditCellView.swift */; };
+		7D3BA2621EBC2DDC0099F4D5 /* RedditDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2611EBC2DDC0099F4D5 /* RedditDataSource.swift */; };
+		7D3BA2641EBC3CD30099F4D5 /* RedditCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BA2631EBC3CD30099F4D5 /* RedditCellPresenter.swift */; };
+		7DC2FF4A1EBC481D002733C1 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2FF491EBC481D002733C1 /* UIColor+Utils.swift */; };
+		7DC2FF4C1EBC8A95002733C1 /* RedditCellPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2FF4B1EBC8A95002733C1 /* RedditCellPresenterTests.swift */; };
+		D530523B85099FEA5B984BA7 /* Pods_Etermax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A40E8D1D6DE191A635F2A3D /* Pods_Etermax.framework */; };
+		EC918FEE65456BAB2EDEC710 /* Pods_EtermaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768643E7C8A7E43F313B026C /* Pods_EtermaxTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D1FC4BD1EBB785200F559CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1FC4A01EBB785200F559CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1FC4A71EBB785200F559CA;
+			remoteInfo = Etermax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B063FBD0F93E6099DE4577E /* Pods-EtermaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtermaxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtermaxTests/Pods-EtermaxTests.release.xcconfig"; sourceTree = "<group>"; };
+		75557506B20BF06AE5243449 /* Pods-Etermax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etermax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Etermax/Pods-Etermax.debug.xcconfig"; sourceTree = "<group>"; };
+		768643E7C8A7E43F313B026C /* Pods_EtermaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtermaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A40E8D1D6DE191A635F2A3D /* Pods_Etermax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Etermax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1FC4A81EBB785200F559CA /* Etermax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Etermax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1FC4AB1EBB785200F559CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D1FC4AD1EBB785200F559CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D1FC4B01EBB785200F559CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D1FC4B21EBB785200F559CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D1FC4B51EBB785200F559CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D1FC4B71EBB785200F559CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1FC4BC1EBB785200F559CA /* EtermaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtermaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1FC4C01EBB785200F559CA /* EtermaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtermaxTests.swift; sourceTree = "<group>"; };
+		7D1FC4C21EBB785200F559CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3BA24D1EBB7BDF0099F4D5 /* RedditBackend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditBackend.swift; sourceTree = "<group>"; };
+		7D3BA2501EBB7CF50099F4D5 /* FakeBackend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeBackend.swift; sourceTree = "<group>"; };
+		7D3BA2521EBB83500099F4D5 /* RedditItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditItem.swift; sourceTree = "<group>"; };
+		7D3BA2541EBB8A330099F4D5 /* EntityFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityFactory.swift; sourceTree = "<group>"; };
+		7D3BA2571EBB8A950099F4D5 /* FactoryInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryInitializable.swift; sourceTree = "<group>"; };
+		7D3BA2591EBBA2960099F4D5 /* RedditListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListing.swift; sourceTree = "<group>"; };
+		7D3BA25B1EBBEAC50099F4D5 /* RedditLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditLink.swift; sourceTree = "<group>"; };
+		7D3BA25D1EBC16410099F4D5 /* RedditRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditRepository.swift; sourceTree = "<group>"; };
+		7D3BA25F1EBC2C930099F4D5 /* RedditCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditCellView.swift; sourceTree = "<group>"; };
+		7D3BA2611EBC2DDC0099F4D5 /* RedditDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditDataSource.swift; sourceTree = "<group>"; };
+		7D3BA2631EBC3CD30099F4D5 /* RedditCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditCellPresenter.swift; sourceTree = "<group>"; };
+		7DC2FF491EBC481D002733C1 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		7DC2FF4B1EBC8A95002733C1 /* RedditCellPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditCellPresenterTests.swift; sourceTree = "<group>"; };
+		8393C712CEA361C44575ABE4 /* Pods-EtermaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtermaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtermaxTests/Pods-EtermaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABF55F6F9BAE6D0810B7CF72 /* Pods-Etermax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etermax.release.xcconfig"; path = "Pods/Target Support Files/Pods-Etermax/Pods-Etermax.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D1FC4A51EBB785200F559CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D530523B85099FEA5B984BA7 /* Pods_Etermax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1FC4B91EBB785200F559CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC918FEE65456BAB2EDEC710 /* Pods_EtermaxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C1ACA9F3D5C7022D0662305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A40E8D1D6DE191A635F2A3D /* Pods_Etermax.framework */,
+				768643E7C8A7E43F313B026C /* Pods_EtermaxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		208B0AE006FB80491F2791DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75557506B20BF06AE5243449 /* Pods-Etermax.debug.xcconfig */,
+				ABF55F6F9BAE6D0810B7CF72 /* Pods-Etermax.release.xcconfig */,
+				8393C712CEA361C44575ABE4 /* Pods-EtermaxTests.debug.xcconfig */,
+				3B063FBD0F93E6099DE4577E /* Pods-EtermaxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D1FC49F1EBB785200F559CA = {
+			isa = PBXGroup;
+			children = (
+				7D1FC4AA1EBB785200F559CA /* Etermax */,
+				7D1FC4BF1EBB785200F559CA /* EtermaxTests */,
+				7D1FC4A91EBB785200F559CA /* Products */,
+				208B0AE006FB80491F2791DE /* Pods */,
+				0C1ACA9F3D5C7022D0662305 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7D1FC4A91EBB785200F559CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D1FC4A81EBB785200F559CA /* Etermax.app */,
+				7D1FC4BC1EBB785200F559CA /* EtermaxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D1FC4AA1EBB785200F559CA /* Etermax */ = {
+			isa = PBXGroup;
+			children = (
+				7D3BA2561EBB8A6E0099F4D5 /* Protocols */,
+				7D3BA24C1EBB7BBB0099F4D5 /* Extensions */,
+				7D1FC4AB1EBB785200F559CA /* AppDelegate.swift */,
+				7D1FC4AD1EBB785200F559CA /* ViewController.swift */,
+				7D1FC4AF1EBB785200F559CA /* Main.storyboard */,
+				7D1FC4B21EBB785200F559CA /* Assets.xcassets */,
+				7D1FC4B41EBB785200F559CA /* LaunchScreen.storyboard */,
+				7D1FC4B71EBB785200F559CA /* Info.plist */,
+				7D3BA2521EBB83500099F4D5 /* RedditItem.swift */,
+				7D3BA2591EBBA2960099F4D5 /* RedditListing.swift */,
+				7D3BA25B1EBBEAC50099F4D5 /* RedditLink.swift */,
+				7D3BA25D1EBC16410099F4D5 /* RedditRepository.swift */,
+				7D3BA25F1EBC2C930099F4D5 /* RedditCellView.swift */,
+				7D3BA2611EBC2DDC0099F4D5 /* RedditDataSource.swift */,
+				7D3BA2631EBC3CD30099F4D5 /* RedditCellPresenter.swift */,
+			);
+			path = Etermax;
+			sourceTree = "<group>";
+		};
+		7D1FC4BF1EBB785200F559CA /* EtermaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D3BA24F1EBB7CE70099F4D5 /* Fakes */,
+				7D1FC4C01EBB785200F559CA /* EtermaxTests.swift */,
+				7DC2FF4B1EBC8A95002733C1 /* RedditCellPresenterTests.swift */,
+				7D1FC4C21EBB785200F559CA /* Info.plist */,
+			);
+			path = EtermaxTests;
+			sourceTree = "<group>";
+		};
+		7D3BA24C1EBB7BBB0099F4D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D3BA24D1EBB7BDF0099F4D5 /* RedditBackend.swift */,
+				7D3BA2541EBB8A330099F4D5 /* EntityFactory.swift */,
+				7DC2FF491EBC481D002733C1 /* UIColor+Utils.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7D3BA24F1EBB7CE70099F4D5 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				7D3BA2501EBB7CF50099F4D5 /* FakeBackend.swift */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
+		7D3BA2561EBB8A6E0099F4D5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7D3BA2571EBB8A950099F4D5 /* FactoryInitializable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D1FC4A71EBB785200F559CA /* Etermax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1FC4C51EBB785300F559CA /* Build configuration list for PBXNativeTarget "Etermax" */;
+			buildPhases = (
+				F680F29845DE6182205B5624 /* [CP] Check Pods Manifest.lock */,
+				7D1FC4A41EBB785200F559CA /* Sources */,
+				7D1FC4A51EBB785200F559CA /* Frameworks */,
+				7D1FC4A61EBB785200F559CA /* Resources */,
+				4D0E058C637FC65237855A68 /* [CP] Embed Pods Frameworks */,
+				84C20BA6B327A4C3F1AE236A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Etermax;
+			productName = Etermax;
+			productReference = 7D1FC4A81EBB785200F559CA /* Etermax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D1FC4BB1EBB785200F559CA /* EtermaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1FC4C81EBB785300F559CA /* Build configuration list for PBXNativeTarget "EtermaxTests" */;
+			buildPhases = (
+				B2D904D25BD9E9B4335C5216 /* [CP] Check Pods Manifest.lock */,
+				7D1FC4B81EBB785200F559CA /* Sources */,
+				7D1FC4B91EBB785200F559CA /* Frameworks */,
+				7D1FC4BA1EBB785200F559CA /* Resources */,
+				C6D18C7BBA809EED209BF39A /* [CP] Embed Pods Frameworks */,
+				4607BBD963E186AAC2754F97 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1FC4BE1EBB785200F559CA /* PBXTargetDependency */,
+			);
+			name = EtermaxTests;
+			productName = EtermaxTests;
+			productReference = 7D1FC4BC1EBB785200F559CA /* EtermaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D1FC4A01EBB785200F559CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Etermax;
+				TargetAttributes = {
+					7D1FC4A71EBB785200F559CA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					7D1FC4BB1EBB785200F559CA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D1FC4A71EBB785200F559CA;
+					};
+				};
+			};
+			buildConfigurationList = 7D1FC4A31EBB785200F559CA /* Build configuration list for PBXProject "Etermax" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D1FC49F1EBB785200F559CA;
+			productRefGroup = 7D1FC4A91EBB785200F559CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D1FC4A71EBB785200F559CA /* Etermax */,
+				7D1FC4BB1EBB785200F559CA /* EtermaxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D1FC4A61EBB785200F559CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1FC4B61EBB785200F559CA /* LaunchScreen.storyboard in Resources */,
+				7D1FC4B31EBB785200F559CA /* Assets.xcassets in Resources */,
+				7D1FC4B11EBB785200F559CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1FC4BA1EBB785200F559CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4607BBD963E186AAC2754F97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtermaxTests/Pods-EtermaxTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D0E058C637FC65237855A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Etermax/Pods-Etermax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84C20BA6B327A4C3F1AE236A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Etermax/Pods-Etermax-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2D904D25BD9E9B4335C5216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6D18C7BBA809EED209BF39A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtermaxTests/Pods-EtermaxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F680F29845DE6182205B5624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D1FC4A41EBB785200F559CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3BA2581EBB8A950099F4D5 /* FactoryInitializable.swift in Sources */,
+				7D3BA2551EBB8A330099F4D5 /* EntityFactory.swift in Sources */,
+				7D3BA24E1EBB7BDF0099F4D5 /* RedditBackend.swift in Sources */,
+				7D1FC4AE1EBB785200F559CA /* ViewController.swift in Sources */,
+				7D3BA2601EBC2C930099F4D5 /* RedditCellView.swift in Sources */,
+				7D3BA25A1EBBA2960099F4D5 /* RedditListing.swift in Sources */,
+				7D3BA25C1EBBEAC50099F4D5 /* RedditLink.swift in Sources */,
+				7D1FC4AC1EBB785200F559CA /* AppDelegate.swift in Sources */,
+				7D3BA2641EBC3CD30099F4D5 /* RedditCellPresenter.swift in Sources */,
+				7D3BA2531EBB83500099F4D5 /* RedditItem.swift in Sources */,
+				7D3BA25E1EBC16410099F4D5 /* RedditRepository.swift in Sources */,
+				7DC2FF4A1EBC481D002733C1 /* UIColor+Utils.swift in Sources */,
+				7D3BA2621EBC2DDC0099F4D5 /* RedditDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1FC4B81EBB785200F559CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1FC4C11EBB785200F559CA /* EtermaxTests.swift in Sources */,
+				7DC2FF4C1EBC8A95002733C1 /* RedditCellPresenterTests.swift in Sources */,
+				7D3BA2511EBB7CF50099F4D5 /* FakeBackend.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D1FC4BE1EBB785200F559CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1FC4A71EBB785200F559CA /* Etermax */;
+			targetProxy = 7D1FC4BD1EBB785200F559CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D1FC4AF1EBB785200F559CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1FC4B01EBB785200F559CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D1FC4B41EBB785200F559CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1FC4B51EBB785200F559CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D1FC4C31EBB785300F559CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D1FC4C41EBB785300F559CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D1FC4C61EBB785300F559CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75557506B20BF06AE5243449 /* Pods-Etermax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Etermax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etermax.test.Etermax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7D1FC4C71EBB785300F559CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF55F6F9BAE6D0810B7CF72 /* Pods-Etermax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Etermax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etermax.test.Etermax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7D1FC4C91EBB785300F559CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8393C712CEA361C44575ABE4 /* Pods-EtermaxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EtermaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etermax.test.EtermaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Etermax.app/Etermax";
+			};
+			name = Debug;
+		};
+		7D1FC4CA1EBB785300F559CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B063FBD0F93E6099DE4577E /* Pods-EtermaxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EtermaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etermax.test.EtermaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Etermax.app/Etermax";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D1FC4A31EBB785200F559CA /* Build configuration list for PBXProject "Etermax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1FC4C31EBB785300F559CA /* Debug */,
+				7D1FC4C41EBB785300F559CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1FC4C51EBB785300F559CA /* Build configuration list for PBXNativeTarget "Etermax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1FC4C61EBB785300F559CA /* Debug */,
+				7D1FC4C71EBB785300F559CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1FC4C81EBB785300F559CA /* Build configuration list for PBXNativeTarget "EtermaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1FC4C91EBB785300F559CA /* Debug */,
+				7D1FC4CA1EBB785300F559CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D1FC4A01EBB785200F559CA /* Project object */;
+}

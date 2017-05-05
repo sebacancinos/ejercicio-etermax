@@ -1,0 +1,6 @@
+framework module Pods_Etermax {
+  umbrella header "Pods-Etermax-umbrella.h"
+
+  export *
+  module * { export * }
+}
