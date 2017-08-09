@@ -86,6 +86,18 @@ class RedditDataSource: NSObject, UITableViewDataSource {
         cell.commentCntLabel?.attributedText = presenter.attributedComments
         cell.subredditLabel?.attributedText = presenter.attributedSubreddit
 
+        if let flair = link.data["author_flair_text"] as? String,
+            let delegate = UIApplication.shared.keyWindow?.rootViewController as? RedditCellDelegate {
+            
+            cell.delegate = delegate
+            cell.extraData = flair
+
+            cell.verButton?.isHidden = false
+        }
+        else {
+            cell.verButton?.isHidden = true
+        }
+        
         return cell
     }
 }

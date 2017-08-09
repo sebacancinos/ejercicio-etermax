@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol RedditCellDelegate: class {
+    func showExtraInfo(_ extraInfo: String)
+}
+
 class RedditCellView: UITableViewCell {
     
     @IBOutlet var thumbnail: UIImageView?
@@ -17,6 +21,10 @@ class RedditCellView: UITableViewCell {
     @IBOutlet var commentCntLabel: UILabel?
     @IBOutlet var subredditLabel: UILabel?
     @IBOutlet var spinner: UIActivityIndicatorView?
+    @IBOutlet var verButton: UIButton?
+    
+    var extraData: String?
+    weak var delegate: RedditCellDelegate?
     
     weak var task: URLSessionDataTask?
     
@@ -29,5 +37,12 @@ class RedditCellView: UITableViewCell {
         
         task.cancel()
         
+    }
+    
+    @IBAction func verPressed() {
+        
+        guard let delegate = delegate, let extraData = extraData else { return }
+        
+        delegate.showExtraInfo(extraData)
     }
 }

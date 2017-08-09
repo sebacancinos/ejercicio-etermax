@@ -37,3 +37,15 @@ class ViewController: UITableViewController {
         }
     }
 }
+
+extension ViewController: RedditCellDelegate {
+    
+    func showExtraInfo(_ extraInfo: String) {
+
+        let alertController = UIAlertController(title: "User Extra Info", message:
+            extraInfo, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default,handler: nil))
+
+        self.present(alertController, animated: true, completion: nil)
+    }
+}

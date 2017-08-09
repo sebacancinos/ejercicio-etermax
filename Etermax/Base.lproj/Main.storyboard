@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PsX-me-eUd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PsX-me-eUd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,6 +69,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMe-kE-XaK">
+                                            <rect key="frame" x="269" y="104" width="101" height="30"/>
+                                            <state key="normal" title="User extra Info"/>
+                                            <connections>
+                                                <action selector="verPressed" destination="W8n-MR-P7j" eventType="touchUpInside" id="VIb-W5-9qb"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="uOo-Ch-3bH" firstAttribute="leading" secondItem="bfx-fu-rA1" secondAttribute="leadingMargin" constant="2" id="4a4-b1-dZ9"/>
@@ -79,9 +86,12 @@
                                         <constraint firstItem="6eb-Td-nFt" firstAttribute="top" secondItem="bfx-fu-rA1" secondAttribute="top" id="CcY-8Y-kuU"/>
                                         <constraint firstAttribute="trailing" secondItem="6eb-Td-nFt" secondAttribute="trailing" constant="5" id="IZT-i2-OR3"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Ccf-nR-vst" secondAttribute="bottom" constant="3" id="Ltv-d7-OvY"/>
+                                        <constraint firstAttribute="bottom" secondItem="xMe-kE-XaK" secondAttribute="bottom" constant="2" id="PwT-M4-gJO"/>
+                                        <constraint firstAttribute="trailing" secondItem="xMe-kE-XaK" secondAttribute="trailing" constant="5" id="Sbz-2d-BzH"/>
                                         <constraint firstItem="rdR-eN-Wdt" firstAttribute="top" secondItem="uOo-Ch-3bH" secondAttribute="top" id="WDX-1A-6Ys"/>
                                         <constraint firstItem="UNI-gQ-zS0" firstAttribute="top" secondItem="uOo-Ch-3bH" secondAttribute="bottom" constant="4" id="YAF-xn-h1Y"/>
                                         <constraint firstItem="Ccf-nR-vst" firstAttribute="top" secondItem="rdR-eN-Wdt" secondAttribute="bottom" constant="3" id="Zpc-0Q-VVk"/>
+                                        <constraint firstItem="xMe-kE-XaK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="coO-bR-sEo" secondAttribute="bottom" constant="5" id="Zxv-QD-tFD"/>
                                         <constraint firstItem="rdR-eN-Wdt" firstAttribute="leading" secondItem="uOo-Ch-3bH" secondAttribute="trailing" constant="8" id="aF5-LT-oCu"/>
                                         <constraint firstItem="CPk-qY-fzP" firstAttribute="centerX" secondItem="uOo-Ch-3bH" secondAttribute="centerX" id="bxx-ll-Y3P"/>
                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UNI-gQ-zS0" secondAttribute="bottom" constant="1" id="c92-M5-0QE"/>
@@ -98,6 +108,7 @@
                                     <outlet property="subredditLabel" destination="6eb-Td-nFt" id="9Sy-3T-GI8"/>
                                     <outlet property="thumbnail" destination="uOo-Ch-3bH" id="xZu-Kc-Bk6"/>
                                     <outlet property="titleLabel" destination="rdR-eN-Wdt" id="fx1-5J-bza"/>
+                                    <outlet property="verButton" destination="xMe-kE-XaK" id="K8B-Im-LGU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
